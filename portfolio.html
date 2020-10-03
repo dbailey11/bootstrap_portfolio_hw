@@ -23,39 +23,68 @@
 
     <!--sticky footer link-->
     <link href="sticky-footer.css" rel="stylesheet" />
+
     <!--tab title-->
     <title>Devyn Bailey Portfolio</title>
 
-    <!--styling for footer-->
+    <!--styling section-->
     <style>
       body {
         background-color: #eecfc8;
       }
+
+      header {
+        background-color: rgb(141, 141, 141);
+      }
+      /*Devyn Bailey*/
+      #name {
+        font-family: "Sansita Swashed", cursive;
+        font-size: 35px;
+        color: black;
+      }
+
+      .nav-link {
+        font-family: 'Didact Gothic', sans-serif;
+      }
+
       .container {
         margin: 20px;
+        padding: 15px;
         position: center;
-        background-color: #7b797a;
+        background-color: rgb(141, 141, 141);
       }
+
       .card {
         margin: 20px;
+        padding: 15px;
         background-color: #f0ebe8;
         color: black;
       }
+
       .card-header {
         background-color: #bad7cf;
-        color: honeydew;
-        width: 100%;
+        font-family: 'Sansita Swashed', cursive;
+        color: black;
       }
-      #name {
-        font-family: "Sansita Swashed", cursive;
+
+      .card-title {
+        font-family: 'Didact Gothic', sans-serif;
+        font-weight: bolder;
+      } 
+      
+      .card-tex {
+        font-family: 'Didact Gothic', sans-serif;
       }
+      
       .footer {
         position: sticky;
         text-align: center;
         width: 100%;
         height: 50px;
         line-height: 4;
-        color: rgb(141, 141, 141);
+        color: honeydew;
+        background-color: #7b797a;
+        font-family: 'Didact Gothic', sans-serif;
       }
     </style>
   </head>
@@ -64,7 +93,7 @@
     <!--header with nav bar-->
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" id="name" href="https://github.com/dbailey11"
+        <a class="navbar-brand" id="name" href="https://www.linkedin.com/in/devyn-bailey-214b4a10b/"
           >Devyn Bailey</a
         >
         <button
@@ -90,34 +119,16 @@
         </div>
       </nav>
     </header>
-
+    <!--container with portfolio projects-->
     <div class="container">
-      <!--portfolio card-->
       <div class="card-header">Portfolio</div>
+      <!--portfolio card deck-->
       <div class="card-deck">
         <div class="row">
-          <!--jeep img card-->
-          <div class="col-sm-4">
-            <div class="card">
-              <img
-                class="card-img-top"
-                src="assets\images\pinkjeeptours.jpg"
-                alt="Pink Jeep Tours"
-                class="rounded-sm"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Pink Jeep Tours</h5>
-                <p class="card-tex">
-                  Contract project for an off-road trail tour company that
-                  specalizes in pink Jeeps. Featuring an schedule and payment
-                  system.
-                </p>
-              </div>
-            </div>
-          </div>
           <!--cowboy img card-->
-          <div class="col-sm-4">
+          <div class="col-sm-6">
             <div class="card">
+              <div class="card-header">Coming Soon</div>
               <img
                 src="assets\images\troynhash.png"
                 class="card-img-top"
@@ -126,33 +137,16 @@
               <div class="card-body">
                 <h5 class="card-title">The Bailey Ranch</h5>
                 <p class="card-tex">
-                  Contract project for a small ranch eastern Colorado to
+                  Contract project for a small ranch in eastern Colorado to
                   showcase horse training and Black Angus Cattle.
                 </p>
               </div>
             </div>
           </div>
-          <!--truck img card-->
-          <div class="col-sm-4">
-            <div class="card">
-              <img
-                src="assets\images\f150.png"
-                class="card-img-top"
-                alt="Custome Built Trucks"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Ty's Custome Builds</h5>
-                <p class="card-tex">
-                  Contract project I did for a small custome mechanic shop.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
           <!--lifting img-->
-          <div class="col-sm-4">
+          <div class="col-sm-6">
             <div class="card">
+              <div class="card-header">Coming Soon</div>
               <img
                 src="assets\images\lifting.png"
                 class="card-img-top"
@@ -161,27 +155,48 @@
               <div class="card-body">
                 <h5 class="card-title">Bailey Personal Training</h5>
                 <p class="card-tex">
-                  Personal website for a coming soon personal training website.
+                  Personal website for a coming soon for specialized personal training.
                 </p>
               </div>
             </div>
           </div>
-          <!--horse close up img-->
-          <div class="col-sm-4">
+        </div>  
+        <div class="row">
+          <!--photographer img card-->
+          <div class="col-sm-6">
             <div class="card">
+              <div class="card-header">Coming Soon</div>
               <img
-                src="assets\images\horseeye.jpg"
+                src="assets\images\jillbailey.JPG"
                 class="card-img-top"
-                alt="Horse Photography"
+                alt="Jill Bailey Photography"
               />
               <div class="card-body">
                 <h5 class="card-title">Jill Bailey Photography</h5>
                 <p class="card-tex">
-                  A project I did for a nature and animal photographer
+                  Contract project I did for a fine art photographer.
                 </p>
               </div>
             </div>
           </div>
+          <!--truck img card-->
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-header">Coming Soon</div>
+              <img
+                src="assets\images\f150.png"
+                class="card-img-top"
+                alt="Custom Built Trucks"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ty's Custom Builds</h5>
+                <p class="card-tex">
+                  Contract project I did for a small custom build mechanic shop.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
         </div>
       </div>
     </div>
