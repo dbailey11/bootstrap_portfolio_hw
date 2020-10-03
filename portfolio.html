@@ -8,7 +8,10 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <!--google font link-->
-    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Bootstrap CSS CDN -->
     <link
@@ -25,20 +28,35 @@
 
     <!--styling for footer-->
     <style>
-        .container {
-            margin: 20px;
-        }
-        #name {
-        font-family: 'Sansita Swashed', cursive;
+      body {
+        background-color: #eecfc8;
       }
-        .footer {
-            position: sticky;
-            text-align: center;
-            width: 100%;
-            height: 50px;
-            line-height: 4;
-            color: rgb(141, 141, 141);
-        }
+      .container {
+        margin: 20px;
+        position: center;
+        background-color: #7b797a;
+      }
+      .card {
+        margin: 20px;
+        background-color: #f0ebe8;
+        color: black;
+      }
+      .card-header {
+        background-color: #bad7cf;
+        color: honeydew;
+        width: 100%;
+      }
+      #name {
+        font-family: "Sansita Swashed", cursive;
+      }
+      .footer {
+        position: sticky;
+        text-align: center;
+        width: 100%;
+        height: 50px;
+        line-height: 4;
+        color: rgb(141, 141, 141);
+      }
     </style>
   </head>
 
@@ -46,7 +64,9 @@
     <!--header with nav bar-->
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" id="name" href="#">Devyn Bailey</a>
+        <a class="navbar-brand" id="name" href="https://github.com/dbailey11"
+          >Devyn Bailey</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -61,8 +81,8 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <!--Nav bar links...span and current?-->
           <div class="navbar-nav">
-            <a class="nav-link active" href="index.html">About Me</a>
-            <a class="nav-link" href="portfolio.html"
+            <a class="nav-link" href="index.html">About Me</a>
+            <a class="nav-link active" href="portfolio.html"
               >Portfolio<span class="sr-only">(current)</span></a
             >
             <a class="nav-link" href="contact.html">Contact</a>
@@ -73,61 +93,92 @@
 
     <div class="container">
       <!--portfolio card-->
-      <div class="card">
-        <div class="card-header">Portfolio</div>
-        <div class="card-body">
-          <!--div class stating row and columns.... what exaclty is it saying?-->
-          <div class="row row-cols-1 row-cols-md-2">
-            <!--pink jeep img-->
-            <div class="col mb-5">
-              <div class="card h-100">
-                <!--not sure how to resize/shrink img all the same, tried rounded-sm-->
-                <img
-                  src="assets\images\pinkjeeptours.jpg"
-                  class="card-img-top"
-                  alt="Pink Jeep Tours"
-                  class="rounded-sm"
-                />
+      <div class="card-header">Portfolio</div>
+      <div class="card-deck">
+        <div class="row">
+          <!--jeep img card-->
+          <div class="col-sm-4">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="assets\images\pinkjeeptours.jpg"
+                alt="Pink Jeep Tours"
+                class="rounded-sm"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pink Jeep Tours</h5>
+                <p class="card-tex">
+                  Contract project for an off-road trail tour company that
+                  specalizes in pink Jeeps. Featuring an schedule and payment
+                  system.
+                </p>
               </div>
             </div>
-            <!--cowboy img-->
-            <div class="col mb-5">
-              <div class="card h-100">
-                <img
-                  src="assets\images\troynhash.png"
-                  class="card-img-top"
-                  alt="Cowboys"
-                />
+          </div>
+          <!--cowboy img card-->
+          <div class="col-sm-4">
+            <div class="card">
+              <img
+                src="assets\images\troynhash.png"
+                class="card-img-top"
+                alt="Cowboys"
+              />
+              <div class="card-body">
+                <h5 class="card-title">The Bailey Ranch</h5>
+                <p class="card-tex">
+                  Contract project for a small ranch eastern Colorado to
+                  showcase horse training and Black Angus Cattle.
+                </p>
               </div>
             </div>
-            <!--truck img-->
-            <div class="col mb-5">
-              <div class="card h-100">
-                <img
-                  src="assets\images\f150.png"
-                  class="card-img-top"
-                  alt="F150"
-                />
+          </div>
+          <!--truck img card-->
+          <div class="col-sm-4">
+            <div class="card">
+              <img
+                src="assets\images\f150.png"
+                class="card-img-top"
+                alt="Custome Built Trucks"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ty's Custome Builds</h5>
+                <p class="card-tex">
+                  Contract project I did for a small custome mechanic shop.
+                </p>
               </div>
             </div>
-            <!--lifting img-->
-            <div class="col mb-5">
-              <div class="card h-100">
-                <img
-                  src="assets\images\lifting.png"
-                  class="card-img-top"
-                  alt="Lifting"
-                />
+          </div>
+        </div>
+        <div class="row">
+          <!--lifting img-->
+          <div class="col-sm-4">
+            <div class="card">
+              <img
+                src="assets\images\lifting.png"
+                class="card-img-top"
+                alt="Bailey Fitness"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bailey Personal Training</h5>
+                <p class="card-tex">
+                  Personal website for a coming soon personal training website.
+                </p>
               </div>
             </div>
-            <!--horse close up img-->
-            <div class="col mb-5">
-              <div class="card h-100">
-                <img
-                  src="assets\images\horseeye.jpg"
-                  class="card-img-top"
-                  alt="Horse close up"
-                />
+          </div>
+          <!--horse close up img-->
+          <div class="col-sm-4">
+            <div class="card">
+              <img
+                src="assets\images\horseeye.jpg"
+                class="card-img-top"
+                alt="Horse Photography"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Jill Bailey Photography</h5>
+                <p class="card-tex">
+                  A project I did for a nature and animal photographer
+                </p>
               </div>
             </div>
           </div>
@@ -138,9 +189,7 @@
     <br />
     <!--bottom footer with copyright-->
     <footer class="footer">
-      <div class="container">
-        <span class="text-white">@Copyright Devyn Bailey 2020</span>
-      </div>
+      <span class="text-white">@Copyright Devyn Bailey 2020</span>
     </footer>
 
     <!-- Optional JavaScript-->

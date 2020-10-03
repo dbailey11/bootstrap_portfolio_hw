@@ -8,7 +8,10 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <!--google font link-->
-    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Bootstrap CSS CDN -->
     <link
@@ -20,25 +23,39 @@
 
     <!--sticky footer link-->
     <link href="sticky-footer.css" rel="stylesheet" />
+
     <!--tab title-->
     <title>Devyn Bailey Portfolio</title>
-
-    <!--styling for footer-->
     <style>
-        .container {
-            margin: 20px;
-        }
-        #name {
-        font-family: 'Sansita Swashed', cursive;
+      body {
+        background-color: #EECFC8;
       }
-        .footer {
-            position: sticky;
-            text-align: center;
-            width: 100%;
-            height: 50px;
-            line-height: 4;
-            background-color: rgb(141, 141, 141);
-        }
+      header nav {
+        background-color: rgb(141, 141, 141);
+      }
+      .card {
+        margin: 20px;
+        background-color: #7B797A;
+        color: honeydew;
+      }
+      .card-header {
+        background-color: #BAD7CF;
+      }
+      .card-header {
+        background-color: #BAD7CF;
+        width: 100%;
+      }
+      #name {
+        font-family: "Sansita Swashed", cursive;
+      }
+      .footer {
+        position: sticky;
+        text-align: center;
+        width: 100%;
+        height: 50px;
+        line-height: 4;
+        background-color: rgb(141, 141, 141);
+      }
     </style>
   </head>
 
@@ -46,7 +63,7 @@
     <!--header with nav bar-->
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" id="name" href="#">Devyn Bailey</a>
+        <a class="navbar-brand" id="name" href="https://github.com/dbailey11">Devyn Bailey</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -59,59 +76,59 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <!--Nav bar links...span and current?-->
-            <div class="navbar-nav">
-            <a class="nav-link active" href="index.html"
-              >About Me</a>
+          <!--Nav bar links...span and current?-->
+          <div class="navbar-nav">
+            <a class="nav-link" href="index.html">About Me</a>
             <a class="nav-link" href="portfolio.html">Portfolio</a>
-            <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a>
+            <a class="nav-link active" href="contact.html"
+              >Contact<span class="sr-only">(current)</span></a
+            >
           </div>
         </div>
       </nav>
     </header>
 
     <div class="container">
-        <!--contact me card and form-->
-        <div class="card">
-            <div class="card-header">Contact Me</div>
-            <div class="card-body">
-                <form>
-                    <!--name line in form-->
-                    <div class="form-group">
-                    <label for="usr">Name:</label>
-                    <input type="text" class="form-control" id="usr" />
-                    </div>
-                    <!--email line in form-->
-                    <div class="form-group">
-                    <label for="exampleInputEmail1">Email address:</label>
-                    <input
-                        type="email"
-                        class="form-control"
-                        id="exampleInputEmail1"
-                        aria-describedby="emailHelp"/>
-                    <small id="emailHelp" class="form-text text-muted"></small>
-                    </div>
-                    <!--message line in form-->
-                    <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Message:</label>
-                    <textarea
-                        class="form-control"
-                        id="exampleFormControlTextarea1"
-                        rows="3"
-                    ></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+      <!--contact me card and form-->
+      <div class="card">
+        <div class="card-header">Contact Me</div>
+        <div class="card-body">
+          <form>
+            <!--name line in form-->
+            <div class="form-group">
+              <label for="usr">Name:</label>
+              <input type="text" class="form-control" id="usr" />
             </div>
+            <!--email line in form-->
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+              <small id="emailHelp" class="form-text text-muted"></small>
+            </div>
+            <!--message line in form-->
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Message:</label>
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
         </div>
+      </div>
     </div>
     <br />
     <br />
     <!--bottom footer with copyright-->
     <footer class="footer">
-      <div class="container">
         <span class="text-white">@Copyright Devyn Bailey 2020</span>
-      </div>
     </footer>
 
     <!-- Optional JavaScript-->
