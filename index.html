@@ -12,6 +12,11 @@
       href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap"
       rel="stylesheet"
     />
+    <!--fontawesome.com-->
+    <script
+      src="https://kit.fontawesome.com/680424053b.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -19,85 +24,23 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-
-    <!--sticky footer link-->
-    <link href="sticky-footer.css" rel="stylesheet" />
+    <!-- css style sheet -->
+    <link href="./assets/css/index.style.css" rel="stylesheet" />
 
     <title>Devyn Bailey Portfolio</title>
-
-    <!--styling-->
-    <!--can't figure out how to add a background image-->
-    <style>
-      body {
-        background-color: #EDDCD8;
-      }
-
-      header {
-        background-color: rgb(141, 141, 141);
-      }
-      /*Devyn Bailey*/
-      #name {
-        font-family: "Sansita Swashed", cursive;
-        font-size: 35px;
-        color: black;
-      }
-
-      .card {
-        margin: 20px;
-        padding: 15px;
-        background-color: rgb(141, 141, 141);
-        color: honeydew;
-      }
-      .card-header {
-        background-color: #bad7cf;
-        font-family: "Sansita Swashed", cursive;
-        color: black;
-      }
-
-      .nav-link {
-        font-family: "Didact Gothic", sans-serif;
-      }
-      /*image*/
-      #me {
-        width: auto;
-        height: auto;
-        margin: auto;
-        display: block;
-      }
-
-      p {
-        margin: auto;
-        display: block;
-        font-family: "Didact Gothic", sans-serif;
-      }
-
-      .footerBar {
-        position: sticky;
-        text-align: center;
-        width: 100%;
-        height: 50px;
-        line-height: 4;
-        background-color: rgb(141, 141, 141);
-        font-family: "Didact Gothic", sans-serif;
-      }
-      #brand {
-        position: sticky;
-        line-height: 4;
-      }
-
-    </style>
   </head>
 
   <body>
-    <!--header with nav bar-->
     <header>
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a
-          class="navbar-brand"
-          id="name"
-          href="https://www.linkedin.com/in/devyn-bailey-214b4a10b/"
-          >Devyn Bailey</a
-        >
+        <img
+          id="brand"
+          src="assets\images\cow_skull_brand.png"
+          alt="brand"
+          width="40px"
+          height="40px"
+        />
+        <div class="navbar-brand" id="name">DAB</div>
         <button
           class="navbar-toggler"
           type="button"
@@ -127,7 +70,6 @@
       <div class="card-header">About Me</div>
       <div class="card-body">
         <div class="row">
-          <!--card column with picture-->
           <div class="col-sm-6">
             <img
               id="me"
@@ -136,27 +78,38 @@
               alt="selfie"
             />
           </div>
-          <!--card column with writing-->
           <div class="col-sm-6">
             <p>
-               Hi all, I am Devyn. I am a Colorado native, raised in northern Colorado. I have always had a passion for old, simplistic western styling. I belive in hard work and being kind. In 2016, I received my Bachelors of Science degree from the Univeristy of Northern Colorado in Biology, emphazising in Ecology. Since then I have been in many different industries building an array of skills and knowledge. The creative and detailed oriented aspects of web development have always been of interest to me, so I decided now was the time to start a new and rewarding journey.  
+              Hi all, I am Devyn. I am a Colorado native, raised in northern
+              Colorado. I have always had a passion for old, simplistic western
+              styling. I belive in hard work and being kind. In 2016, I received
+              my Bachelors of Science degree from the Univeristy of Northern
+              Colorado in Biology, emphazising in Ecology. Since then I have
+              been in many different industries building an array of skills and
+              knowledge. The creative and detailed oriented aspects of web
+              development have always been of interest to me, so I decided now
+              was the time to start a new and rewarding journey.
             </p>
             <br />
             <p>
-              Currently enrolled in the University of Denver's full webstack developer certification course. Looking forward to having the opportunities to join amazing teams and be able to help people. Estimated graduation is March 2021. 
-              
-              You can find me at my social pages below. 
+              Currently enrolled in the University of Denver's full webstack
+              developer certification course. Looking forward to having the
+              opportunities to join amazing teams and be able to help people.
+              Estimated graduation is March 2021. You can find me at my social
+              pages below.
             </p>
             <br />
             <p>
               Social Pages:
               <br />
+              <i class="fab fa-linkedin"></i>
               <a
                 class="link"
                 href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
                 >LinkedIn</a
               >
               <br />
+              <i class="fab fa-github"></i>
               <a class="link" href="https://github.com/dbailey11">GitHub</a>
             </p>
           </div>
@@ -166,16 +119,21 @@
 
     <br />
     <br />
-    <!--bottom footer with copyright-->
+
     <footer class="footerBar">
       <div class="content">
-        <img id="brand" src="assets\images\brand.JPG" alt="brand" width="45px" height="45px">
-        <span class="text-white">@Copyright 2020</span>
+        <img
+          id="brand"
+          src="assets\images\cow_skull_brand.png"
+          alt="brand"
+          width="40px"
+          height="40px"
+        />
+        <span class="text-white">©DAB 2020</span>
       </div>
     </footer>
 
-    <!-- Optional JavaScript-->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Bootstrap JavaScript CDNs-->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

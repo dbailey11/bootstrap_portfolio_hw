@@ -1,0 +1,63 @@
+body {
+    background-color: #EDDCD8;
+  }
+
+  header {
+    background-color:rgb(141, 141, 141);
+  }
+  /*Devyn Bailey*/
+  #name {
+    font-family: "Sansita Swashed", cursive;
+    font-size: 35px;
+    color: black;
+  }
+  
+  .nav-link {
+    font-family: 'Didact Gothic', sans-serif;
+  }
+
+  .container {
+    margin: 20px;
+    padding: 15px;
+    position: center;
+    background-color: rgb(141, 141, 141);
+  }
+
+  .card {
+    margin: 20px;
+    padding: 15px;
+    background-color: #f0ebe8;
+    color: black;
+  }
+
+  .card-header {
+    background-color: #bad7cf;
+    font-family: 'Sansita Swashed', cursive;
+    color: black;
+  }
+
+  .card-title {
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: bolder;
+  } 
+  
+  .card-tex {
+    font-family: 'Didact Gothic', sans-serif;
+  }
+  
+  .footerBar {
+    position: sticky;
+    text-align: center;
+    width: 100%;
+    line-height: 4;
+    color: honeydew;
+    background-color: #7b797a;
+    font-family: 'Didact Gothic', sans-serif;
+  }
+  #brand {
+    position: sticky;
+    line-height: 4;
+  }
+  .text-white {
+    font-family: 'Cedarville Cursive', cursive;
+  }
